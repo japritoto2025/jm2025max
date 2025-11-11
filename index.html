@@ -4,15 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>✨ Japri Hub 2025 – Pusat Event & Info Hiburan Online 🎮</title>
-  <meta name="description" content="Portal event dan informasi hiburan online terbaru 2025. Aman, cepat, dan mudah diakses di semua perangkat.">
-  <meta name="keywords" content="Japri Hub, event 2025, hiburan online, portal resmi, link informasi">
+  <title>✨ Japritoto Max 2025 – Pusat Event & Info Game Online 🎮</title>
+  <meta name="description" content="Klik & Main di Japritoto Max 2025! Pusat Event & Info Game Online Populer, cepat, dan mudah diakses di semua perangkat.">
+  <meta name="keywords" content="Japritoto Max 2025, event online, game populer, hiburan, portal resmi, japritoto, max2025">
 
   <!-- Open Graph / Social -->
-  <meta property="og:title" content="Japri Hub 2025 – Event & Info Resmi">
-  <meta property="og:description" content="Temukan event dan informasi hiburan terbaru di Japri Hub 2025! 🎮">
-  <meta property="og:image" content="https://japritoto2025.github.io/jh2025hub/assets/japritoto-share.png">
-  <meta property="og:url" content="https://japritoto2025.github.io/jh2025hub/">
+  <meta property="og:title" content="Japritoto Max 2025 – Event & Info Game Online">
+  <meta property="og:description" content="Klik & Main di Japritoto Max 2025! Pusat Event & Info Game Online Populer 🎮">
+  <meta property="og:image" content="https://japritoto2025.github.io/jm2025max/assets/japritoto-share.png">
+  <meta property="og:url" content="https://japritoto2025.github.io/jm2025max/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -26,16 +26,6 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* Tambahan animasi fade-in lembut */
-    .logo {
-      opacity: 0;
-      animation: fadeIn 1.5s ease forwards;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
-    }
-
     body {
       font-family: Arial, sans-serif;
       text-align: center;
@@ -43,7 +33,33 @@
       background: linear-gradient(180deg, #ffe2ec, #fff);
       color: #333;
     }
+
     .container { padding: 20px; max-width: 600px; margin: auto; }
+
+    /* Countdown */
+    .countdown {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ff4e88;
+      margin-bottom: 15px;
+      animation: pulse 1s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from { opacity: 1; transform: scale(1); }
+      to { opacity: 0.6; transform: scale(1.05); }
+    }
+
+    .logo {
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
     .btn {
       display: block;
       text-decoration: none;
@@ -56,10 +72,12 @@
       transition: 0.3s;
       width: 80%;
     }
+
     .btn:hover {
       transform: scale(1.05);
       box-shadow: 0 4px 10px rgba(255, 100, 150, 0.3);
     }
+
     footer {
       font-size: 13px;
       color: #777;
@@ -70,15 +88,18 @@
 
 <body>
   <div class="container">
+    <!-- Countdown 12 detik -->
+    <div class="countdown" id="countdown">Countdown: 12</div>
+
     <header>
-      <img src="assets/japritoto-logo-google.gif" alt="Logo Japri Hub" class="logo" style="width:120px;">
-      <img src="assets/logo-japritoto.png" alt="Logo Japri Hub PNG" class="logo" style="width:120px;">
-      <h1>✨ Event & Info Resmi Japri Hub 2025</h1>
-      <p>Temukan event dan informasi hiburan terbaru di Japri Hub 2025! 🎮</p>
+      <img src="assets/japritoto-logo-google.gif" alt="Logo Japritoto Max" class="logo" style="width:120px;">
+      <img src="assets/japritoto-share.png" alt="Japritoto Max Banner" class="logo" style="width:100%; border-radius:12px; margin-top:10px;">
+      <h1>✨ Event & Info Resmi Japritoto Max 2025</h1>
+      <p>Temukan event dan informasi game online terbaru di Japritoto Max 2025! 🎮</p>
     </header>
 
     <main>
-      <a href="https://japritoto04.com/register?referral_code=safira1" target="_blank" class="btn">🌐 Kunjungi Website Utama</a>
+      <a href="https://japritoto04.com/register?referral_code=ernitagacor&member=ernitagacor" target="_blank" class="btn">🌐 Kunjungi Website Utama</a>
       <a href="https://rebrand.ly/japritoto-jackpot" target="_blank" class="btn">🎯 Event & Turnamen</a>
       <a href="https://www.instagram.com/saferalee/" target="_blank" class="btn">📸 Instagram</a>
       <a href="https://direct.lc.chat/12948207/?utm_source=heylink.me" target="_blank" class="btn">💬 Chat Bantuan</a>
@@ -86,8 +107,23 @@
     </main>
 
     <footer>
-      <p>Powered by <a href="https://heylink.me/safirahub2025" target="_blank">Heylink SafiraHub2025</a></p>
+      <p>Powered by <a href="https://heylink.me/ernitamax2025" target="_blank">Heylink Ernitamax2025</a></p>
     </footer>
   </div>
+
+  <script>
+    // Countdown 12 detik
+    let countdown = 12;
+    const countdownEl = document.getElementById("countdown");
+
+    const interval = setInterval(() => {
+      countdown--;
+      countdownEl.textContent = `Countdown: ${countdown}`;
+      if (countdown <= 0) {
+        countdownEl.textContent = "🎉 Event Dimulai Sekarang!";
+        clearInterval(interval);
+      }
+    }, 1000);
+  </script>
 </body>
 </html>
