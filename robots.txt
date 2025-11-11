@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jh2025hub.netlify.app/sitemap.xml
