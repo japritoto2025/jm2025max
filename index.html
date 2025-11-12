@@ -8,10 +8,10 @@
   <meta name="description" content="Klik & Main di Japritoto Max 2025! Pusat Event & Info Game Online Populer, cepat, dan mudah diakses di semua perangkat.">
   <meta name="keywords" content="Japritoto Max 2025, event online, game populer, hiburan, portal resmi, japritoto, max2025">
 
-  <!-- Open Graph / Social -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Japritoto Max 2025 – Event & Info Game Online">
   <meta property="og:description" content="Klik & Main di Japritoto Max 2025! Pusat Event & Info Game Online Populer 🎮">
-  <meta property="og:image" content="https://japritoto2025.github.io/jm2025max/japritoto-share.png">
+  <meta property="og:image" content="https://japritoto2025.github.io/jm2025max/assets/logo-jm2025max.png">
   <meta property="og:url" content="https://japritoto2025.github.io/jm2025max/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
@@ -22,60 +22,136 @@
   <meta name="referrer" content="no-referrer-when-downgrade">
 
   <!-- Favicon -->
-  <link rel="icon" href="logo-jm2025max.png" type="image/png">
+  <link rel="icon" href="assets/japritoto-logo-google.gif" type="image/gif">
 
   <style>
+    :root {
+      --pink: #ff6b9e;
+      --orange: #ffa07a;
+      --gold: #ffb347;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Poppins", Arial, sans-serif;
       text-align: center;
       margin: 0;
       background: linear-gradient(180deg, #ffe2ec, #fff);
       color: #333;
+      overflow-x: hidden;
     }
 
-    .container { 
-      padding: 20px; 
-      max-width: 600px; 
-      margin: auto; 
+    .container {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
     }
 
-    /* Countdown 12 detik */
+    /* Countdown */
     .countdown {
       font-size: 22px;
-      font-weight: bold;
-      color: #ff4e88;
+      font-weight: 600;
+      background: linear-gradient(45deg, #ff4e88, #ff8a00, #ff4e88);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 200%;
+      animation: countdownGlow 2s infinite alternate;
       margin-bottom: 15px;
-      animation: pulse 1s infinite alternate;
     }
 
-    @keyframes pulse {
-      from { opacity: 1; transform: scale(1); }
-      to { opacity: 0.6; transform: scale(1.05); }
+    @keyframes countdownGlow {
+      from { background-position: 0% 50%; }
+      to { background-position: 100% 50%; }
     }
 
-    /* Animasi logo */
+    /* Logo glow lembut */
     .logo {
-      opacity: 0;
-      animation: fadeIn 1.5s ease forwards;
+      width: 120px;
+      margin-top: 10px;
+      filter: drop-shadow(0 0 6px rgba(255, 190, 90, 0.8));
+      animation: logoGlow 3s ease-in-out infinite alternate;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
+    @keyframes logoGlow {
+      from { filter: drop-shadow(0 0 4px rgba(255, 180, 80, 0.6)); transform: scale(1); }
+      to { filter: drop-shadow(0 0 10px rgba(255, 220, 130, 1)); transform: scale(1.03); }
     }
 
-    /* Tombol utama */
+    /* Banner wrapper animasi gradient & sinar */
+    .banner-wrapper {
+      display: inline-block;
+      position: relative;
+      border-radius: 16px;
+      padding: 6px;
+      background: linear-gradient(270deg, #ff8fa3, #ffb347, #ffd700, #ff8fa3);
+      background-size: 400% 400%;
+      animation: bannerGradient 8s ease infinite;
+      overflow: hidden;
+      margin-top: 15px;
+    }
+
+    @keyframes bannerGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Banner */
+    .banner {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Efek cahaya lembut bergerak */
+    .banner-wrapper::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      animation: shineMove 5s infinite linear;
+      z-index: 2;
+    }
+
+    @keyframes shineMove {
+      0% { left: -75%; }
+      50% { left: 125%; }
+      100% { left: 125%; }
+    }
+
+    h1 {
+      font-size: 20px;
+      margin: 18px 0 8px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #555;
+      margin: 0 0 18px;
+    }
+
+    /* Tombol */
     .btn {
       display: block;
       text-decoration: none;
-      background: linear-gradient(45deg, #ff6b9e, #ffa07a);
+      background: linear-gradient(45deg, var(--pink), var(--orange));
       color: white;
       padding: 12px 20px;
       margin: 10px auto;
       border-radius: 25px;
       font-weight: bold;
-      transition: 0.3s;
+      transition: all 0.3s ease;
       width: 80%;
+      max-width: 300px;
     }
 
     .btn:hover {
@@ -88,18 +164,35 @@
       color: #777;
       margin-top: 30px;
     }
+
+    footer a {
+      color: var(--pink);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Responsif Mobile */
+    @media (max-width: 480px) {
+      .logo { width: 90px; }
+      .banner-wrapper { padding: 4px; }
+      .countdown { font-size: 18px; }
+      h1 { font-size: 18px; }
+      .btn { font-size: 15px; padding: 10px 15px; }
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
-
-    <!-- Countdown 12 detik -->
     <div class="countdown" id="countdown">Countdown: 12</div>
 
     <header>
-      <img src="logo-jm2025max.png" alt="Logo Japritoto Max" class="logo" style="width:140px;">
-      <img src="japritoto-share.png" alt="Japritoto Max Banner" class="logo" style="width:100%; border-radius:12px; margin-top:10px;">
+      <img src="assets/japritoto-logo-google.gif" alt="Logo Japritoto Max" class="logo">
+
+      <div class="banner-wrapper">
+        <img src="assets/logo-jm2025max.png" alt="Japritoto Max Banner" class="banner">
+      </div>
+
       <h1>✨ Event & Info Resmi Japritoto Max 2025</h1>
       <p>Temukan event dan informasi game online terbaru di Japritoto Max 2025! 🎮</p>
     </header>
@@ -126,7 +219,11 @@
       countdown--;
       countdownEl.textContent = `Countdown: ${countdown}`;
       if (countdown <= 0) {
-        countdownEl.textContent = "🎉 Event Dimulai Sekarang!";
+        countdownEl.innerHTML = "🎉 Event Dimulai Sekarang!";
+        countdownEl.style.animation = "none";
+        countdownEl.style.background = "linear-gradient(45deg, #ff1493, #ff8c00)";
+        countdownEl.style.webkitBackgroundClip = "text";
+        countdownEl.style.webkitTextFillColor = "transparent";
         clearInterval(interval);
       }
     }, 1000);
